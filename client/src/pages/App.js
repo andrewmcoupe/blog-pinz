@@ -1,8 +1,16 @@
 import React from "react";
+import Header from "../components/Header";
+import Map from "../components/Map";
 import withRoot from "../withRoot";
+import withAndy from "../withAndy";
 
 const App = () => {
-  return <div>App</div>;
+	return (
+		<React.Fragment>
+			<Header />
+			<Map />
+		</React.Fragment>
+	);
 };
 
 export default withRoot(App);
